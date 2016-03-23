@@ -1,0 +1,14 @@
+{% extends 'base_home.html' %}
+{% block main %}
+    <div class="container-fluid" id="home">
+        <div class="container" id="transOverlay">
+            <div class="container" id="divCenter">
+                Hello Guest?
+                <a class="btn btn-info btn-sm" role="button" style="font-weight: bold"
+                   href="{% url 'social:begin' 'google-oauth2' %}">
+                    Login
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
