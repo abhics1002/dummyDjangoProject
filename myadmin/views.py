@@ -18,3 +18,4 @@ def email_check(user):
         return True
     else:
         return False
+
