@@ -1,5 +1,5 @@
 from django.contrib import admin
-from myadmin.models import UserProfileModel, UserDetails, AppSectionConfig, AppSection, Branch, Subjects, Articles, Video, RelatedReads,Question, QuestionDetails, Quiz, QuizResponse, Challenge_quiz
+from quizupadmin.models import UserProfileModel, UserDetails, AppSectionConfig, AppSection, Branch, Subjects, Articles, Video, RelatedReads,Question, QuestionDetails, Quiz, QuizResponse, Challenge_quiz
 # Register your models here.
 admin.site.register(UserProfileModel)
 admin.site.register(UserDetails)

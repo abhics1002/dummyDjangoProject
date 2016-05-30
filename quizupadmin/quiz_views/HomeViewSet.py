@@ -6,11 +6,11 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 from rest_framework import viewsets, status
 from rest_framework.decorators import list_route, detail_route, permission_classes, authentication_classes
-from myadmin.quiz_response.responses import QuestionResponse
-from myadmin.quiz_utils.json_utils import to_json
+from quizupadmin.quiz_response.responses import QuestionResponse
+from quizupadmin.quiz_utils.json_utils import to_json
 from django.http import HttpResponse
-from myadmin.quiz_response.responses import HomePageResp, HomeSecItemResp, ImageItem
-from myadmin.quiz_utils.question_util import get_quizs_by_category, get_top_quiz_variant, get_quiz_by_popularity
+from quizupadmin.quiz_response.responses import HomePageResp, HomeSecItemResp, ImageItem
+from quizupadmin.quiz_utils.question_util import get_quizs_by_category, get_top_quiz_variant, get_quiz_by_popularity
 
 class HomeViewSet(viewsets.ViewSet):
 

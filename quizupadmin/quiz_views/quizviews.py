@@ -1,8 +1,8 @@
 __author__ = 'abhishekbharadwaj'
-from myadmin.quiz_response.responses import VersionCheckResp
+from quizupadmin.quiz_response.responses import VersionCheckResp
 from rest_framework import viewsets, status
 from django.http import HttpResponse
-from myadmin.quiz_utils.json_utils import to_json
+from quizupadmin.quiz_utils.json_utils import to_json
 
 def check_version(request, id):
     version_resp = VersionCheckResp(version_code=1, content="", force_update=False, status_code=200)

@@ -1,8 +1,8 @@
 __author__ = 'abhishekbharadwaj'
-from myadmin.models import Quiz
-from myadmin.quiz_response.responses import QuizVariant
-from myadmin.quiz_response.responses import HomePageResp, HomeSecItemResp, ImageItem, QuizResp, QuestionResponse
-from myadmin.models import Quiz, Question
+from quizupadmin.models import Quiz
+from quizupadmin.quiz_response.responses import QuizVariant
+from quizupadmin.quiz_response.responses import HomePageResp, HomeSecItemResp, ImageItem, QuizResp, QuestionResponse
+from quizupadmin.models import Quiz, Question
 
 def get_quiz_by_id(quiz_id):
     quiz_obj = Quiz.objects.get(id=quiz_id)

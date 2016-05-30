@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
-    'myadmin',
+    'quizupadmin',
     'rest_framework',
     'rest_framework.authtoken',
 
@@ -54,9 +54,9 @@ MIDDLEWARE_CLASSES = (
 
 )
 
-ROOT_URLCONF = 'myproject.urls'
+ROOT_URLCONF = 'quizupproject.urls'
 
-WSGI_APPLICATION = 'myproject.wsgi.application'
+WSGI_APPLICATION = 'quizupproject.wsgi.application'
 
 
 # Database
@@ -96,13 +96,13 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.social_details',
     'social.pipeline.social_auth.social_uid',
     'social.pipeline.social_auth.auth_allowed',
-    'myproject.social_auth.social_user',
+    'quizupproject.social_auth.social_user',
     'social.pipeline.user.get_username',
     'social.pipeline.user.create_user',
     'social.pipeline.social_auth.associate_user',
     'social.pipeline.social_auth.load_extra_data',
     'social.pipeline.user.user_details',
-    'myproject.social_auth.switch_user'
+    'quizupproject.social_auth.switch_user'
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -116,7 +116,7 @@ AUTHENTICATION_BACKENDS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'myadmin/templates'), os.path.join(BASE_DIR, 'visa/templates'),
+        'DIRS': [os.path.join(BASE_DIR, 'quizupadmin/templates'), os.path.join(BASE_DIR, 'visa/templates'),
                 ],
         'APP_DIRS': True,
         'OPTIONS': {
