@@ -7,6 +7,6 @@ python-social-auth==0.2.1
 requests==2.5.1
 requests-oauthlib==0.4.2
 simplejson==3.6.5
-urllib3==1.10.2
+urllib3==1.26.5
 Unirest==1.1.7
 django-suit==0.2.14
